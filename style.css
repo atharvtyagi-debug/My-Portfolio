@@ -1,0 +1,537 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fc;
+    color: #252842;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddded;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 28px;
+    color: #252842;
+}
+
+.logo span {
+    color: #6554e8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #252842;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #6554e8;
+}
+
+.home {
+    min-height: 520px;
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #eeedff;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    color: #6554e8;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.home h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #6554e8;
+}
+
+.home h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.home-content > p:not(.subtitle) {
+    margin-bottom: 25px;
+    color: #555b73;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 20px;
+    margin: 5px 5px 5px 0;
+    background-color: #6554e8;
+    color: white;
+    border: 2px solid #6554e8;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4d3bd0;
+    border-color: #4d3bd0;
+}
+
+.button-outline {
+    background-color: transparent;
+    color: #6554e8;
+}
+
+.button-outline:hover {
+    color: white;
+}
+
+.profile {
+    text-align: center;
+    min-width: 220px;
+}
+
+.profile-image {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #d4d0ff;
+    border: 6px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+}
+
+.profile h3 {
+    font-size: 22px;
+}
+
+.profile p {
+    color: #555b73;
+}
+
+.section {
+    padding: 70px 8%;
+    scroll-margin-top: 75px;
+}
+
+.alternate {
+    background-color: #eeedff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: #6554e8;
+}
+
+.section-description {
+    text-align: center;
+    color: #646981;
+    margin: 15px auto 30px;
+    max-width: 750px;
+}
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e1e1ee;
+    border-left: 5px solid #6554e8;
+    border-radius: 10px;
+}
+
+.about-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    margin-bottom: 15px;
+    color: #555b73;
+}
+
+.personal-details {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #dddded;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #e1e1ee;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(40, 40, 80, 0.06);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card h4 {
+    color: #6554e8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555b73;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    border-color: #6554e8;
+}
+
+.project-icon,
+.hobby-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.technology {
+    color: #6554e8 !important;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.text-link {
+    display: inline-block;
+    color: #6554e8;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.skill {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e1e1ee;
+    border-radius: 8px;
+}
+
+.skill-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.skill-heading h3 {
+    font-size: 17px;
+}
+
+.skill-heading p {
+    color: #6554e8;
+    font-weight: bold;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    background-color: #dedcf0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #6554e8;
+    border-radius: 10px;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 60%;
+}
+
+.java {
+    width: 60%;
+}
+
+.communication {
+    width: 70%;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.contact-info,
+.contact-form {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #e1e1ee;
+    border-radius: 10px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 18px;
+    overflow-wrap: anywhere;
+}
+
+.contact-info a {
+    color: #6554e8;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccccdf;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #6554e8;
+    border-color: #6554e8;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.footer {
+    padding: 25px;
+    background-color: #252842;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 8px;
+}
+
+.footer a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #c9c2ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .home {
+        padding: 60px 5%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        width: 95%;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home h2 {
+        font-size: 19px;
+    }
+
+    .profile-image {
+        width: 170px;
+        height: 170px;
+        font-size: 70px;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .personal-details,
+    .skills-container,
+    .card-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-box {
+        padding: 20px;
+    }
+}
+
+
+#themeButton {
+    background-color: #6554e8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#themeButton:hover {
+    background-color: #4d3bd0;
+}
+
+
+
+body.dark-mode {
+    background-color: #181824;
+    color: white;
+}
+
+body.dark-mode header,
+body.dark-mode .card,
+body.dark-mode .about-box,
+body.dark-mode .skill,
+body.dark-mode .contact-info,
+body.dark-mode .contact-form {
+    background-color: #29293b;
+    color: white;
+}
+
+body.dark-mode .home,
+body.dark-mode .alternate {
+    background-color: #222236;
+}
+
+body.dark-mode p,
+body.dark-mode .nav-links a {
+    color: #dddded;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #222236;
+    color: white;
+    border-color: #55556b;
+}
